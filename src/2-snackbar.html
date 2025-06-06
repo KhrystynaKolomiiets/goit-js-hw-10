@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <form class="form">
-      <label>
+      <label class="delay-name">
         Delay (ms)
-        <input type="number" name="delay" required />
+        <input type="number" name="delay" class="number-input" required />
       </label>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>State</legend>
-        <label>
+
+        <label class>
           <input type="radio" name="state" value="fulfilled" required />
           Fulfilled
         </label>
@@ -24,7 +26,7 @@
         </label>
       </fieldset>
 
-      <button type="submit">Create notification</button>
+      <button type="submit" class="submit-btn">Create notification</button>
     </form>
 
     <script type="module" src="./js/2-snackbar.js"></script>
